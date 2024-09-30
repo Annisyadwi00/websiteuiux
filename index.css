@@ -1,0 +1,85 @@
+:root {
+	--primary-color: #000000;
+	--secondary-color: #0d091a;
+	--text-color: #333;
+	--background-color: #000000;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	margin: 0;
+	padding: 0;
+}
+
+header, main, footer {
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+
+}
+
+header {
+	background-color: var(--primary-color);
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+section {
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgb(255, 255, 255);
+}
+
+h2 {
+	color: var(--primary-color);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input, select, button {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+button {
+	background-color: var(--secondary-color);
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: #b80b0b;
+}
+
+footer {
+	text-align: center;
+	background-color: var(--primary-color);
+	color: white;
+}
+
+@media (max-width: 600px) {
+	main {
+			padding: 10px;
+	}
+	
+	section {
+			padding: 15px;
+	}
+}
